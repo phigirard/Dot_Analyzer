@@ -13,11 +13,15 @@ The plugin was written to analyse SEM micrograph as shown here:
 
 
 ## 1. Installation instructions
-To install the plugin, just copy the file Dot_Analyzer.jar into the “plugins” directory, within the “ImageJ” directory.  
-On PCs this directory is under “Program Files” and on a MacOSX it is under “Applications”.  Both require certain privileges to do this.  
-Restart ImageJ.  The plugin is installed under the menu: 
+* Download the [python script file](https://github.com/phigirard/Dot_Analyzer/blob/main/Dot_Analyzer.py) into your computer.
+* Use File > Open…  to open the script `nuclearFRET.py` in ImageJ/Fiji.
+* Click Run on the bottom of the script editor window (you can also go to : Run > Run in the Script Fiji menu).
+<br><p align="center">
+	<img src="./images/Fig2.png" width="700">
+<br>
+<i>Fig. 2:</i> A typical SEM micrograph.</p>
 
-> Plugins ▷ Dot Analyzer ▷ Dot Analyzer v3.1…
+
 
 ## 2. The “Parameters” main window.
 When you start the plugin, you have to define different parameters for the analysis and to select the different diagrams/plots that you want to visualize (Fig. 2).<br>
