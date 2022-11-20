@@ -6,7 +6,7 @@ This document describes the workings of the ImageJ/Fiji python script **Dot_Anal
 
 The plugin was written to analyse SEM micrograph as shown here:
 <p align="center">
-	<img src="./images/Fig1.png" width="700" 
+	<img src="./images/Fig1.png" width="600" 
          alt="SEM micrograph">
 <br>
 <i>Fig. 1:</i> A typical SEM micrograph.</p>
@@ -17,7 +17,7 @@ The plugin was written to analyse SEM micrograph as shown here:
 * Use File > Open…  to open the script `nuclearFRET.py` in ImageJ/Fiji.
 * Click Run on the bottom of the script editor window (you can also go to : Run > Run in the Script Fiji menu).
 <br><p align="center">
-	<img src="./images/Fig2.png" width="700">
+	<img src="./images/Fig2.png" width="400">
 <br>
 <i>Fig. 2:</i> A typical SEM micrograph.</p>
 
