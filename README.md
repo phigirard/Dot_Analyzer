@@ -14,7 +14,8 @@ The plugin was written to analyse SEM micrograph as shown here:
 
 ## 1. Installation instructions
 * Download the [python script file](https://github.com/phigirard/Dot_Analyzer/blob/main/Dot_Analyzer.py) into your computer.
-* For the script to appear in the menus, you should saved in the ImageJ2.app/scripts or the ImageJ2.app/plugins/Scripts directory (or a subdirectory thereof). Otherwise use File > Open…  to open the script `Dot_Analyzer.py` in the [script Editor](https://imagej.net/scripting/script-editor) of ImageJ/Fiji.
+* For the script to appear in the menus, you should saved in the `ImageJ2.app/scripts` or the `ImageJ2.app/plugins/Scripts` directory (or a subdirectory thereof).
+* Otherwise use File > Open…  to open the script `Dot_Analyzer.py` in the [script Editor](https://imagej.net/scripting/script-editor) of ImageJ/Fiji.
 * Click Run on the bottom of the script editor window (you can also go to : Run > Run in the Script Fiji menu).
 <br><p align="center">
 	<img src="./images/Fig2.png" width="400">
@@ -27,10 +28,10 @@ The plugin was written to analyse SEM micrograph as shown here:
 When you start the plugin, you have to define different parameters for the analysis and to select the different diagrams/plots that you want to visualize (Fig. 2).<br>
 
 <p align="center">
-	<img src="./images/Fig2.png" width="400" 
+	<img src="./images/Fig3.png" width="400" 
          alt="“Parameters” main window">
 <br>
-<i>Fig. 2:</i> The “Parameters” main window</p><br>
+<i>Fig. 3:</i> The “Parameters” main window</p><br>
 
 
 
