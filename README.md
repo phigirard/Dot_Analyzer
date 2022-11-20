@@ -14,7 +14,7 @@ The plugin was written to analyse SEM micrograph as shown here:
 
 ## 1. Installation instructions
 * Download the [python script file](https://github.com/phigirard/Dot_Analyzer/blob/main/Dot_Analyzer.py) into your computer.
-* Use File > Open…  to open the script `Dot_Analyzer.py` in the [script Editor](https://imagej.net/scripting/script-editor) of ImageJ/Fiji.
+* For the script to appear in the menus, you should saved in the ImageJ2.app/scripts or the ImageJ2.app/plugins/Scripts directory (or a subdirectory thereof). Otherwise use File > Open…  to open the script `Dot_Analyzer.py` in the [script Editor](https://imagej.net/scripting/script-editor) of ImageJ/Fiji.
 * Click Run on the bottom of the script editor window (you can also go to : Run > Run in the Script Fiji menu).
 <br><p align="center">
 	<img src="./images/Fig2.png" width="400">
