@@ -26,8 +26,9 @@ and Click Run on the bottom of the script editor window (you can also go to : Ru
 
 ## 2. The “Parameters” main window.
 When you start the plugin, you have to define different parameters for the analysis and to select the different diagrams/plots that you want to visualize (Fig. 3).<br>
-<img src="./images/Fig3.png" width="400" alt="Parameters”>
-<br>
+<p align="center">
+	<img src="./images/Fig3.png" width="400" alt="Parameters”>
+</p>
 					      
 You must indicate:<br>
 
