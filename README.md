@@ -45,7 +45,7 @@ You must indicate:<br>
     		<img src="Fig4-1.png" style="width:50%">
   		</div>
   		<div class="column">
-    		<img src="Fig4-2.png" style="width:80%">
+    		<img src="Fig4-2.png" style="width:50%">
   		</div>
   	</div>
 <br>
