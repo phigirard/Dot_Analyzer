@@ -29,7 +29,7 @@ When you start the plugin, you have to define different parameters for the analy
 <p align="center">
 	<img src="./images/Fig3.png" width="400" alt="Parameters”>
 </p>
-					      
+<br>				      
 You must indicate:<br>
 
 1. Select the image to analyse: Choose the micrograph image.<br>
