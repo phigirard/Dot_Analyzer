@@ -38,8 +38,8 @@ You must indicate:<br>
 	      
 2. Measure scale bar on the image: If you do not know the size in nm of a pixel or if your image is not automatically calibrated spatially, you should select this option. In this case before the analysis a dialog box will ask the user to draw a rectangle to fit with the scale bar (it is recommanded to zoom in the region of the scale bar of the image) as shown in Fig 4. <br>
 <p align="center">
-	<img src="./images/Fig4-1.png" width="100">
-   <img src="./images/Fig4-2.png" width="300">
+	<img src="./images/Fig4-1.png" width="300">
+   <img src="./images/Fig4-2.png" width="500">
          
 <br>
 <i>Fig. 4:</i> Scale bar measurement</p>
