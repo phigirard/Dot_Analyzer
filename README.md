@@ -38,18 +38,9 @@ When you start the plugin, you have to define different parameters for the analy
 You must indicate:<br>
 
 1. Select the image to analyse: Choose the micrograph image.<br>
+	      
 2. Measure scale bar on the image: If you do not know the size in nm of a pixel or if your image is not automatically calibrated spatially, you should select this option. In this case before the analysis a dialog box will ask the user to draw a rectangle to fit with the scale bar (it is recommanded to zoom in the region of the scale bar of the image) as shown in Fig 4. <br>
-<p align="center">
-	<div class="row">
-  		<div class="column">
-    		<img src="Fig4-1.png" style="width:50%">
-  		</div>
-  		<div class="column">
-    		<img src="Fig4-2.png" style="width:50%">
-  		</div>
-  	</div>
-<br>
-<i>Fig. 4:</i> Scale bar selection</p><br>
+
 						       
 
 Known Distance in nm that are used for conversion from pixel to nm. You should use the scale bar at the bottom left of the micrograph. For example, in the Heidelberg SEM data, the parameters are 200 nm = 171 pixels at 100.00 KX magnification.<br>
