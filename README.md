@@ -25,7 +25,7 @@ The plugin was written to analyse SEM micrograph as shown here:
 
 
 ## 2. The “Parameters” main window.
-When you start the plugin, you have to define different parameters for the analysis and to select the different diagrams/plots that you want to visualize (Fig. 2).<br>
+When you start the plugin, you have to define different parameters for the analysis and to select the different diagrams/plots that you want to visualize (Fig. 3).<br>
 
 <p align="center">
 	<img src="./images/Fig3.png" width="400" 
@@ -37,8 +37,10 @@ When you start the plugin, you have to define different parameters for the analy
 
 You must indicate:
 
-1. Distance in pixels.<br>
-2. Known Distance in nm that are used for conversion from pixel to nm. You should use the scale bar at the bottom left of the micrograph. For example, in the Heidelberg SEM data, the parameters are 200 nm = 171 pixels at 100.00 KX magnification.<br>
+1. Select the image to analyse: Choose the micrograph image.<br>
+2. Measure scale bar on the image: If you do not know the size in nm of a pixel or if your image is not automatically calibrated spatially, you should select this option. 
+
+Known Distance in nm that are used for conversion from pixel to nm. You should use the scale bar at the bottom left of the micrograph. For example, in the Heidelberg SEM data, the parameters are 200 nm = 171 pixels at 100.00 KX magnification.<br>
 3. Set the minimum size (in pixels^2) to exclude objects that appear in the binary image that are clearly not objects of interest (Attention: this parameter is clearly connected to the thresholding method you have selected). This parameter is the same that appears in “Size ( ^2)” (where you have to define the minimum and the maximum size) of the “Analyze Particles” window.<br>
 4. Select the Thresholding method: the list is the same that the one you can find directly in the Threshold window (Image ▷ Adjust ▷ Threshold…) as indicated below. The “MaxEntropy” method gives the best result on the Fig 1 but you have to consider trying different auto-threshold method. Here for example, the methods: “Default”, “IJ_IsoData” (=“Default”), “MaxEntropy”, “RenyiEntropy” and “Yen” are also good. If the threshold method you have selected do not give you the best result, you do not need to stop the plugin because it will ask you if you want to restart the analysis after the first step.<br>
 5. Select “6-nearest neighbour diagram” if you want to visualize the 6 closest neighbours of each spots (see Fig. 3). In the analysis, the spots which are too closed to the borders are not taken into account because they do not have 6-closest neighbours as you can see on the Fig 3. Each spots is connected to its 6 neighbours with a line of different colours (red, orange, yellow, green, magenta, blue).<br>
