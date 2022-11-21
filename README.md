@@ -4,7 +4,7 @@ an ImageJ/Fiji python script for dot spacing and order analysis of SEM micrograp
 --------------------------------------------------------------
 This document describes the workings of the ImageJ/Fiji python script **Dot_Analyzer.py**, written by Philippe Girard ([email](philippe.girard@ijm.fr)).
 
-The plugin was written to analyse SEM micrograph as shown here:
+This Python script was written to analyse SEM micrograph as shown here:
 <p align="center">
 	<img src="./images/Fig1.png" width="600" 
          alt="SEM micrograph">
@@ -14,13 +14,13 @@ The plugin was written to analyse SEM micrograph as shown here:
 
 ## 1. Installation instructions
 * Download the [python script file](https://github.com/phigirard/Dot_Analyzer/blob/main/Dot_Analyzer.py) into your computer.
-* For the script to appear in the menus, you should saved in the `ImageJ2.app/scripts` or the `ImageJ2.app/plugins/Scripts` directory (or a subdirectory thereof).
-* Otherwise use File > Open…  to open the script `Dot_Analyzer.py` in the [script Editor](https://imagej.net/scripting/script-editor) of ImageJ/Fiji.
-* Click Run on the bottom of the script editor window (you can also go to : Run > Run in the Script Fiji menu).
+* For the script to appear in the menu, you should saved in the `ImageJ2.app/scripts` or the `ImageJ2.app/plugins/Scripts` directory (or a subdirectory thereof).
+* Otherwise use File > Open…  to open the script `Dot_Analyzer.py` in the [script Editor](https://imagej.net/scripting/script-editor) of ImageJ/Fiji
+and Click Run on the bottom of the script editor window (you can also go to : Run > Run in the Script Fiji menu).
 <br><p align="center">
 	<img src="./images/Fig2.png" width="400">
 <br>
-<i>Fig. 2:</i> Script`Dot_Analyzer.py` in the script Editor of ImageJ/Fiji.</p>
+<i>Fig. 2:</i> Script `Dot_Analyzer.py` in the script Editor of ImageJ/Fiji.</p>
 
 
 
@@ -29,16 +29,28 @@ When you start the plugin, you have to define different parameters for the analy
 
 <p align="center">
 	<img src="./images/Fig3.png" width="400" 
-         alt="“Parameters” main window">
+         alt="Parameters”>
 <br>
 <i>Fig. 3:</i> The “Parameters” main window</p><br>
 
 
 
-You must indicate:
+You must indicate:<br>
 
 1. Select the image to analyse: Choose the micrograph image.<br>
-2. Measure scale bar on the image: If you do not know the size in nm of a pixel or if your image is not automatically calibrated spatially, you should select this option. 
+2. Measure scale bar on the image: If you do not know the size in nm of a pixel or if your image is not automatically calibrated spatially, you should select this option. In this case before the analysis a dialog box will ask the user to draw a rectangle to fit with the scale bar (it is recommanded to zoom in the region of the scale bar of the image) as shown in Fig 4. <br>
+<p align="center">
+	<div class="row">
+  		<div class="column">
+    		<img src="Fig4-1.png" style="width:50%">
+  		</div>
+  		<div class="column">
+    		<img src="Fig4-2.png" style="width:80%">
+  		</div>
+  	</div>
+<br>
+<i>Fig. 4:</i> Scale bar selection</p><br>
+						       
 
 Known Distance in nm that are used for conversion from pixel to nm. You should use the scale bar at the bottom left of the micrograph. For example, in the Heidelberg SEM data, the parameters are 200 nm = 171 pixels at 100.00 KX magnification.<br>
 3. Set the minimum size (in pixels^2) to exclude objects that appear in the binary image that are clearly not objects of interest (Attention: this parameter is clearly connected to the thresholding method you have selected). This parameter is the same that appears in “Size ( ^2)” (where you have to define the minimum and the maximum size) of the “Analyze Particles” window.<br>
