@@ -26,12 +26,14 @@ and Click Run on the bottom of the script editor window (you can also go to : Ru
 
 ## 2. The “Parameters” main window.
 When you start the plugin, you have to define different parameters for the analysis and to select the different diagrams/plots that you want to visualize (Fig. 3).<br>
+
 <p align="center">
 	<img src="./images/Fig3.png" width="400">
+         
 <br>
-</p>
+<i>Fig. 3:</i> The “Parameters” main window</p>
 
-						      
+
 You must indicate:<br>
 
 1. `Select the image to analyse`: Choose the micrograph image.<br>
@@ -55,7 +57,7 @@ For example, in a field-emission scanning electron microscope (FE-SEM, LEO-1530,
 
 4. `Minimal size of particles in pixels`: Set the minimum size (in pixels^2) to exclude objects that appear in the binary image that are clearly not of interest. This parameter is the same that appears in “Size ( ^2)” of the “Analyze Particles” window.<br>
 
-5. `Automatic Threshold`: if the checkbox is ticked on, the image is automarically thresholded with the "Triangle" method. Otherwise, the Threshold window (Image ▷ Adjust ▷ Threshold…) is displayed for allowing the user to manually select the thresholding method or to interactively explore the threshold value that segments every dots (in red).<br>
+5. `Automatic Threshold`: if the checkbox is ticked on, the image is automatically thresholded with the "Triangle" method. Otherwise, the Threshold window (Image ▷ Adjust ▷ Threshold…) is displayed for allowing the user to manually select the thresholding method or to interactively explore the threshold value that segments every dots (in red).<br>
 
 6. `Choose the diagram to display`: 2 diagrams can be displayed : the Voronoi diagram (or tesselation) [**[1-4]**](#references) or, on top of the voronoi tessalation, the Delaunay diagram (or triangulation) [**[3-4]**](#references).
 
@@ -135,6 +137,32 @@ Hence, <i>ξ<sub>0</sub></i> is a measure for the typical size of the single cry
 
 10. `Save Spacing and Order in a table` this checkbox indicates that you want to save the spacing and the order in a text file. If you select this option, a “Save Spacing & Order” window will appear at the end of the analysis.<br>
 
+
+## 3. Analysis
+ 
+### Preprocess step 
+First, the image is cropped (89% of the original height) to remove the information bar at the bottom of the micrograph (Fig 6). <br>
+
+<p align="center">
+	<img src="./images/Fig6.png" width="900">
+<br>
+<i>Fig. 6:</i> Original image with the rectangular selection used to crop at 89% the height of the image.</p><br>
+
+
+Then it is converted to a binary image to reveal the spots (by automatic or interactively thresholding depending of the checkbox `Automatic Threshold`) and a rolling ball of 10 pixels is applied to remove the background to the image (Fig 7).<br>
+
+<p align="center">
+	<img src="./images/Fig7.png" width="900">
+<br>
+<i>Fig. 7:</i> Thresholded image.</p><br>
+
+
+An overlay of the image with the subtracted background (in grey) and the thresholded image (in red) is displayed to allow the user choosing to restart the threshold step. 
+
+<p align="center">
+	<img src="./images/Fig8.png" width="900">
+<br>
+<i>Fig. 8:</i> The Overlay: Subtracted-background image (in grey) / threshold image (in red).</p><br>
 
 ## References
 
