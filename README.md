@@ -18,7 +18,7 @@ This Python script was written to analyse SEM micrograph as shown here:
 * Otherwise use File > Open…  to open the script `Dot_Analyzer.py` in the [script Editor](https://imagej.net/scripting/script-editor) of ImageJ/Fiji
 and Click Run on the bottom of the script editor window (you can also go to : Run > Run in the Script Fiji menu).
 <p align="center">
-	<img src="./images/Fig2.png" width="400">
+	<img src="./images/Fig2.png" width="600">
 <br>
 <i>Fig. 2:</i> Script `Dot_Analyzer.py` in the script Editor of ImageJ/Fiji.</p>
 
