@@ -164,6 +164,15 @@ An overlay of the image with the subtracted background (in grey) and the thresho
 <br>
 <i>Fig. 8:</i> The Overlay: Subtracted-background image (in grey) / threshold image (in red).</p><br>
 
+<p align="center">
+	<img src="./images/Fig9.png" width="300">
+<br>
+<i>Fig. 9:</i> Restart or not Window.</p><br>
+
+### Dot dectection analysis 
+
+The function “ParticleAnalyzer” (“Analyze/Analyze Particles…”) is applied to detect the position of the different spots (the parameter “Min size” you have selected at the beginning is use here to remove all the spot below this size in pixel^2). This process permits to measure the centre of mass of each spot. 
+
 ## References
 
  [1] G. F. Voronoï. Deuxième mémoire: recherches sur les paralléloèdres primitifs. J. Reine Angew. Math., 136:67–181, 1909. 
