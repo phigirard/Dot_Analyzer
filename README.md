@@ -149,7 +149,7 @@ First, the image is cropped (89% of the original height) to remove the informati
 <i>Fig. 6:</i> Original image with the rectangular selection used to crop at 89% the height of the image.</p><br>
 
 
-Then it is converted to a binary image to reveal the spots (by automatic or interactively thresholding depending of the checkbox `Automatic Threshold`) and a rolling ball of 10 pixels is applied to remove the background to the image (Fig 7).<br>
+Then it is converted to a binary image to reveal the spots (by automatic or interactively thresholding depending of the checkbox `Automatic Threshold`) and a rolling ball of 10 pixels is applied to substract the background to the image (Fig 7).<br>
 
 <p align="center">
 	<img src="./images/Fig7.png" width="900">
@@ -157,12 +157,12 @@ Then it is converted to a binary image to reveal the spots (by automatic or inte
 <i>Fig. 7:</i> Thresholded image.</p><br>
 
 
-An overlay of the image with the subtracted background (in grey) and the thresholded image (in red) is displayed to allow the user choosing to restart the threshold step. 
+An overlay of the image with the substracted background (in grey) and the thresholded image (in red) is displayed to allow the user choosing to restart the threshold step. 
 
 <p align="center">
 	<img src="./images/Fig8.png" width="900">
 <br>
-<i>Fig. 8:</i> The Overlay: Subtracted-background image (in grey) / threshold image (in red).</p><br>
+<i>Fig. 8:</i> The Overlay: Substracted-background image (in grey) / threshold image (in red).</p><br>
 
 <p align="center">
 	<img src="./images/Fig9.png" width="300">
