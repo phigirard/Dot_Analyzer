@@ -134,3 +134,34 @@ Hence, <i>ξ<sub>0</sub></i> is a measure for the typical size of the single cry
 
 
 10. `Save Spacing and Order in a table` this checkbox indicates that you want to save the spacing and the order in a text file. If you select this option, a “Save Spacing & Order” window will appear at the end of the analysis.<br>
+
+
+## References
+
+ [1] G. F. Voronoï. Deuxième mémoire: recherches sur les paralléloèdres primitifs. J. Reine Angew. Math., 136:67–181, 1909. 
+ 
+ [2] G. M. Voronoï. Nouvelles applications des paramètres continus à la théorie des formes quadratiques. deuxième Mémoire: Recherches sur les parallélloèdres primitifs. J. Reine Angew. Math., 134:198–287, 1908. 
+ 
+ [3] Okabe, A et al., K. Spatial Tessellations: Concepts and Applications of Voronoi Diagrams, 2nd ed. New York: Wiley, 2000.
+ 
+ [4] F. Aurenhammer. Voronoi diagrams - a survey of a fundamental geometric data structure. ACM Transactions on Mathematical Software, 23:469-483, 1996.
+ 
+ [5] Ripley B. D. Spatial Statistics, Wiley, New York, 1981.
+ 
+ [6] Diggle P.J. Statistical Analysis of Spatial Point Patterns, Academic Press, New York, 1983.
+ 
+ [7] Cressie N.A.C. Statistics for Spatial Data, Wiley, New York, 1991.
+ 
+ [8] Penttinent et al. Marked point processes in forest statistics. For. Sci. 38, 806-824, 1992.
+ 
+ [9] Stoyan et al. Stochastic Geometry and its applications, Wiley, New York, 1987.
+
+[10] B. I. Halperin and D. R. Nelson, Phys. Rev. Lett. 41, 121, 1978. 
+
+[11] D. R. Nelson and B. I. Halperin, Phys. Rev. B 19, 2456, 1979.
+
+[12] C.A. Murray, in Bond-orientational order in condensed matter systems, edited by K. Strandburg, Springer-Verlag, New York, pp. 137–215, 1992.
+
+[13] D.R. Nelson, Defects and geometry in condensed matter physics, Cambridge University Press, Cambridge, 2002.
+
+[14] D.R. Nelson, M. Rubinstein, Phil. Mag. A. 46, 105, 1982.
