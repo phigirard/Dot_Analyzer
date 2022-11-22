@@ -57,14 +57,14 @@ For example, in a field-emission scanning electron microscope (FE-SEM, LEO-1530,
 
 5. `Automatic Threshold`: if the checkbox is ticked on, the image is automarically thresholded with the "Triangle" method. Otherwise, the Threshold window (Image ▷ Adjust ▷ Threshold…) is displayed for allowing the user to manually select the thresholding method or to interactively explore the threshold value that segments every dots (in red).<br>
 
-6. `Choose the diagram to display`: 2 diagrams can be displayed : the Voronoi diagram (or tesselation)[**[1-4]**](#references) or, on top of the voronoi tessalation, the Delaunay diagram (or triangulation) [**[3-4]**](#references).
+6. `Choose the diagram to display`: 2 diagrams can be displayed : the Voronoi diagram (or tesselation) [**[1-4]**](#references) or, on top of the voronoi tessalation, the Delaunay diagram (or triangulation) [**[3-4]**](#references).
 
 * The Voronoi diagram is a simple mathematical construct that has proved useful in fields as diverse as environmental studies, cell biology, crystallography, transportation planning, and communications theory. Given a set of points (the center of mass of each gold-dot), the Voronoi diagram defines a series of cells surrounding each point. Each cell contains all points that are closer to its defining point than to any other point in the set. Subsequently, the “borders” of the cells are equidistant between the defining points of adjacent cells.By doing so, the number of borders give you the number of closest neighbors. 
 For more information about the Voronoi diagram, see the [Wikipedia webpage](http://en.wikipedia.org/wiki/Voronoi_diagram).<br>
 
 * Delaunay diagram (or triangulation) . In graph theory, the Delaunay triangulation corresponds to the dual graph of the Voronoi tessellation. By dual, I mean to draw a line segment between two Voronoi vertices if their Voronoi polygons have a common edge, or in more mathematical terminology: there is a natural bijection between the two which reverses the face inclusions. This diagram gives the distance between the closest neighbors of each gold-dot. For more information about the Voronoi diagram, see the [Wikipedia webpage](http://en.wikipedia.org/wiki/Delaunay_triangulation).<br>
 
-7. `Besag’s <i>L</i> Function`: The Besag's <i>L</i> Function is based on the Ripley's <i>K</i> Function. Details of various theoretical aspects of K are in books [**[5-7]**](#references). Ripley’s K function is a popular tool to analyze mapped spatial point pattern. It is defined without edge correction as:
+7. `Besag’s L Function`: The Besag's <i>L</i> Function is based on the Ripley's <i>K</i> Function. Details of various theoretical aspects of K are in books [**[5-7]**](#references). Ripley’s K function is a popular tool to analyze mapped spatial point pattern. It is defined without edge correction as:
 <p align="center">
 	<img src="./images/Formula01.png" width="250">
 </p>
@@ -133,5 +133,4 @@ For a 2D system (or the quasi long-ranged bond orientational order of the hexati
 Hence, <i>ξ<sub>0</sub></i> is a measure for the typical size of the single crystalline domain, i.e., larger is <i>ξ<sub>0</sub></i> and larger is the crystalline domain (and better is the order). The bond-orientational correlation length <i>ξ<sub>0</sub></i> is determined by fitting <i>log(g<sub>6</sub>(r))</i> with a line Ar+B by using the fitting algorithm described in Numerical Recipes Section 15.2. The plugin shows the function <i>g<sub>6</sub>(r)</i> with the exponential fit in red and the length <i>ξ<sub>0</sub></i> (with the χ<sup>2</sup> test) in the same plot. <br>
 
 
-10. `Save Spacing and Order in a table` this checkbox indicates that you want to save the spacing and the order in a text file. If you select this option, a “Save Spacing & Order” window will appear at the end of the analysis (see below).<br>
-
+10. `Save Spacing and Order in a table` this checkbox indicates that you want to save the spacing and the order in a text file. If you select this option, a “Save Spacing & Order” window will appear at the end of the analysis.<br>
