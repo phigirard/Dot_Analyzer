@@ -193,7 +193,7 @@ Each voronoi cell (that are not at the border of the image) are color-coded (usi
 
 A Neighbor Bar (Fig. 13) is also displayed in addition to the analysis output to indicate the number of neighbors of each voronoi ROI (=individual dot). 
 <p align="center">
-	<img src="./images/Fig13.png" width="900">
+	<img src="./images/Fig13.png" width="200">
 <br>
 <i>Fig. 13:</i> Neighbor Bar****.</p><br>
 
