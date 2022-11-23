@@ -11,6 +11,8 @@ This Python script was written to analyse SEM micrograph as shown here:
 <br>
 <i>Fig. 1:</i> A typical SEM micrograph.</p>
 
+## License
+The Dot_Analyzer script runs under the  [BSD-3 License](https://opensource.org/licenses/BSD-3-Clause)
 
 ## 1. Installation instructions
 * Download the [python script file](https://github.com/phigirard/Dot_Analyzer/blob/main/Dot_Analyzer.py) into your computer.
