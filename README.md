@@ -221,7 +221,7 @@ For in-depth analysis, different plots can be displayed :
 
 ### Save Result: Spacing and Order
 
-If you have ticked on the checkbox `Save Spacing and Order in a table` in the “Parameters” main window (Fig. 3), the “Save Spacing & Order” main window (Fig. 17) is appearing to let the user indicating the different characteristics listed below and all these parameters are saved in a new or existed file (see Fig 18).
+If you have ticked on the checkbox `Save Spacing and Order in a table` in the “Parameters” main window (Fig. 3), the “Save Spacing & Order” main window (Fig. 17) is appearing to let the user indicating the different characteristics listed below and all these parameters are saved in a new or existed CSV file.
 
 1. First row: Polymer
 	* First copolymer (in the list: PS, P2VP, PDMS, PMMA) with the number of monomer (Fig. 17a at left)
@@ -243,7 +243,7 @@ If you have ticked on the checkbox `Save Spacing and Order in a table` in the �
 <i>Fig. 17:</i> The “Save Spacing & Order” main window.</p><br>
 
 
-The File created contains the following parameters of the analysis:
+The CSV File created contains the following parameters of the analysis:
 
 1. Filename (without extension), 
 2. Polymer, (example: PS[52400]-P2VP[28100])
@@ -257,12 +257,13 @@ The File created contains the following parameters of the analysis:
 11. Sterror (Standard error) in nm,
 12. Order Parameter
 
-To open the file you can use a spreadsheet software or Excel (with File ▷ Import) as indicated in Fig. 18:
+This file can be opened in ImageJ/Fiji as a Results Table  (Fig. 18) or in Excel (with File ▷ Import)
 <p align="center">
 	<img src="./images/Fig18.png" width="900" 
          alt="Import in Excel">
 <br>
-<i>Fig. 18:</i> Imported CSV file in Excel with the parameters of the analyzed image (from Fig. 17).</p><br>
+<i>Fig. 18:</i> The parameters of the analyzed image (from Fig. 17) imported in ImageJ/Fiji as a Results Table.</p><br>
+
 
 ## References
 
