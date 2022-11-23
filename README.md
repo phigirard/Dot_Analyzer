@@ -197,6 +197,31 @@ A Neighbor Bar (Fig. 13) is also displayed in addition to the analysis output to
 <br>
 <i>Fig. 13:</i> Neighbor Bar.</p><br>
 
+## 4. Save Result: Spacing and Order
+
+You have to fill the different characteristics of your system in the “Save Spacing & Order” main window (Fig. 14) and all these parameters are saved in a new or existed file (see Fig 15).
+
+1. First row: Polymer
+	* First copolymer (in the list: PS, P2VP, PDMS, PMMA) with the number of monomer (Fig. 14a at left)
+	* Second copolymer (Fig. 14a at right)
+2. Second row:
+	* Loading rate of gold (between 0 and 1), 
+	* Polymer concentration (in mg/ml) 
+3. Third row:
+	* Select if you have use the dipping method (False) or spinning method (True). If you select spinning method the “dipping speed” is disabled and in grey because you do not have to specify it (Fig. 14b).  
+	* Dipping speed (in Volts).
+
+4.	Fourth row:
+	* Date of the file when it was created (automatically filled with the information of the image), 
+	* Add in an existed file (Yes = True, No = False). The created file is automatically saved in the folder of the analysed image.
+	
+<p align="center">
+	<img src="./images/Fig14.png" width="800" 
+         alt="“Save Spacing & Order” main window">
+<br>
+<i>Fig. 14:</i> The “Save Spacing & Order” main window.</p><br>
+
+
 
 ## References
 
