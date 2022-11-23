@@ -2,7 +2,7 @@
 an ImageJ/Fiji python script for dot spacing and order analysis of SEM micrographs 
 
 ## License
-The Dot_Analyzer script runs under the  [BSD-3 License](https://opensource.org/licenses/BSD-3-Clause)
+The Dot_Analyzer script runs under the  [BSD-3 License](https://opensource.org/licenses/BSD-3-Clause) https://camo.githubusercontent.com/34b6050461140f85c2d3cd545b5e873d430c45627603890a7ff3392e03bd2a4f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f62696f766f7878656c2f62763364626f783f7374796c653d706c6173746963
 
 --------------------------------------------------------------
 This document describes the workings of the ImageJ/Fiji python script **Dot_Analyzer.py**, written by Philippe Girard ([email](philippe.girard@ijm.fr)).
