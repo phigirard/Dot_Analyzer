@@ -57,9 +57,15 @@ For example, in a field-emission scanning electron microscope (FE-SEM, LEO-1530,
 
 4. `Minimal size of particles in pixels`: Set the minimum size (in pixels^2) to exclude objects that appear in the binary image that are clearly not of interest. This parameter is the same that appears in “Size ( ^2)” of the “Analyze Particles” window.<br>
 
-5. `Automatic Threshold`: if the checkbox is ticked on, the image is automatically thresholded with the "Triangle" method. Otherwise, the Threshold window (Image ▷ Adjust ▷ Threshold…) is displayed for allowing the user to manually select the thresholding method or to interactively explore the threshold value that segments every dots (in red).<br>
+5. `Automatic Threshold`: if the checkbox is ticked on, the image is automatically thresholded with the "Triangle" method. Otherwise, the Threshold window (Image ▷ Adjust ▷ Threshold…) is displayed as shown in Fig. 6 for allowing the user to manually select the thresholding method or to interactively explore the threshold value that segments every dots (in red).<br>
+<p align="center">
+	<img src="./images/Fig6.png" width="600">      
+<br>
+<i>Fig. 6:</i> Manual threshold </p>
+<br>
 
-6. `Choose the diagram to display`: 2 diagrams can be displayed : the Voronoi diagram (or tesselation) [**[1-4]**](#references) or, on top of the voronoi tessalation, the Delaunay diagram (or triangulation) [**[3-4]**](#references).
+
+6. `Choose the diagram to display`: 2 diagrams can be displayed : `Voronoi diagram` = the Voronoi diagram (or tesselation) [**[1-4]**](#references) or `Voronoi/Delaunay diagram`= the Delaunay diagram (or triangulation) [**[3-4]**](#references) is superimposed to the voronoi tessalation.
 
 * The Voronoi diagram is a simple mathematical construct that has proved useful in fields as diverse as environmental studies, cell biology, crystallography, transportation planning, and communications theory. Given a set of points (the center of mass of each gold-dot), the Voronoi diagram defines a series of cells surrounding each point. Each cell contains all points that are closer to its defining point than to any other point in the set. Subsequently, the “borders” of the cells are equidistant between the defining points of adjacent cells.By doing so, the number of borders give you the number of closest neighbors. 
 For more information about the Voronoi diagram, see the [Wikipedia webpage](http://en.wikipedia.org/wiki/Voronoi_diagram).<br>
@@ -141,37 +147,56 @@ Hence, <i>ξ<sub>0</sub></i> is a measure for the typical size of the single cry
 ## 3. Analysis
  
 ### Preprocess step 
-First, the image is cropped (89% of the original height) to remove the information bar at the bottom of the micrograph (Fig 6). <br>
-
-<p align="center">
-	<img src="./images/Fig6.png" width="900">
-<br>
-<i>Fig. 6:</i> Original image with the rectangular selection used to crop at 89% the height of the image.</p><br>
-
-
-Then it is converted to a binary image to reveal the spots (by automatic or interactively thresholding depending of the checkbox `Automatic Threshold`) and a rolling ball of 10 pixels is applied to substract the background to the image (Fig 7).<br>
+First, the image is cropped (89% of the original height) to remove the information bar at the bottom of the micrograph (Fig 7). <br>
 
 <p align="center">
 	<img src="./images/Fig7.png" width="900">
 <br>
-<i>Fig. 7:</i> Thresholded image.</p><br>
+<i>Fig. 7:</i> Original image with the rectangular selection used to crop at 89% the height of the image.</p><br>
 
 
-An overlay of the image with the substracted background (in grey) and the thresholded image (in red) is displayed to allow the user choosing to restart the threshold step. 
+Then the image is converted to a binary image to reveal the spots (by automatic or interactively thresholding depending of the checkbox `Automatic Threshold`) and a rolling ball of 10 pixels is applied to substract the background to the image (Fig 8).<br>
 
 <p align="center">
 	<img src="./images/Fig8.png" width="900">
 <br>
-<i>Fig. 8:</i> The Overlay: Substracted-background image (in grey) / threshold image (in red).</p><br>
+<i>Fig. 8:</i> Thresholded image.</p><br>
+
+
+An overlay of the image with the substracted background (in grey) and the thresholded image (in red) is displayed (Fig. 9) to allow the user choosing to restart the threshold step (Fig. 10). 
 
 <p align="center">
-	<img src="./images/Fig9.png" width="300">
+	<img src="./images/Fig9.png" width="900">
 <br>
-<i>Fig. 9:</i> Restart or not Window.</p><br>
+<i>Fig. 9:</i> The Overlay: Substracted-background image (in grey) / threshold image (in red).</p><br>
+
+<p align="center">
+	<img src="./images/Fig10.png" width="300">
+<br>
+<i>Fig. 10:</i> Restart or not Window.</p><br>
+
 
 ### Dot dectection analysis 
 
-The function “ParticleAnalyzer” (“Analyze/Analyze Particles…”) is applied to detect the position of the different spots (the parameter “Min size” you have selected at the beginning is use here to remove all the spot below this size in pixel^2). This process permits to measure the centre of mass of each spot. 
+The function “ParticleAnalyzer” (“Analyze/Analyze Particles…”) is applied to detect the position of the different spots (the parameter “Min size” you have selected at the beginning is use here to remove all the spot below this size in pixel^2). This process permits to measure the centre of mass of each spot.
+Then a Voronoi analysis is applied to these dot position and the voronoi cells are listed as ROI in Roi Manager. 
+Each voronoi cell (that are not at the border of the image) are color-coded (using the LUT "glasbey inverted") in an 8-bit binary image according to the number of neighbors of each individual dot (Fig. 11). Mouse hovering over the colored Voronoi ROIs enables you to know the respective number of neighbors in the ImageJ/Fiji main window as the number behind “index=”. If `Voronoi/Delaunay diagram` is selected, a Delaunay triangulation is superimposed to the previous Voronoi image (Fig. 12)
+
+<p align="center">
+	<img src="./images/Fig11.png" width="900">
+<br>
+<i>Fig. 11:</i> Voronoi diagram.</p><br>
+<p align="center">
+	<img src="./images/Fig12.png" width="900">
+<br>
+<i>Fig. 12:</i> Voronoi/Delaunay diagram.</p><br>
+
+A Neighbor Bar (Fig. 13) is also displayed in addition to the analysis output to indicate the number of neighbors of each voronoi ROI (=individual dot). 
+<p align="center">
+	<img src="./images/Fig13.png" width="900">
+<br>
+<i>Fig. 13:</i> Neighbor Bar****.</p><br>
+
 
 ## References
 
