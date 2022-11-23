@@ -1,6 +1,9 @@
 # Dot Analyzer for SEM micrographs
 an ImageJ/Fiji python script for dot spacing and order analysis of SEM micrographs 
 
+## License
+The Dot_Analyzer script runs under the  [BSD-3 License](https://opensource.org/licenses/BSD-3-Clause)
+
 --------------------------------------------------------------
 This document describes the workings of the ImageJ/Fiji python script **Dot_Analyzer.py**, written by Philippe Girard ([email](philippe.girard@ijm.fr)).
 
@@ -10,9 +13,6 @@ This Python script was written to analyse SEM micrograph as shown here:
          alt="SEM micrograph">
 <br>
 <i>Fig. 1:</i> A typical SEM micrograph.</p>
-
-## License
-The Dot_Analyzer script runs under the  [BSD-3 License](https://opensource.org/licenses/BSD-3-Clause)
 
 ## 1. Installation instructions
 * Download the [python script file](https://github.com/phigirard/Dot_Analyzer/blob/main/Dot_Analyzer.py) into your computer.
