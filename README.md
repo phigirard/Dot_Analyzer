@@ -65,7 +65,7 @@ For example, in a field-emission scanning electron microscope (FE-SEM, LEO-1530,
 <br>
 
 
-6. `Choose the diagram to display`: 2 diagrams can be displayed : `Voronoi diagram` = the Voronoi diagram (or tesselation) [**[1-4]**](#references) or `Voronoi/Delaunay diagram`= the Delaunay diagram (or triangulation) [**[3-4]**](#references) is superimposed to the voronoi tessalation.
+6. `Choose the diagram to display`: `Voronoi diagram` = the Voronoi tesselation [**[1-4]**](#references) or `Voronoi/Delaunay diagram`= the Delaunay triangulation [**[3-4]**](#references) superimposed to the Voronoi tessalation.
 
 * The Voronoi diagram is a simple mathematical construct that has proved useful in fields as diverse as environmental studies, cell biology, crystallography, transportation planning, and communications theory. Given a set of points (the center of mass of each gold-dot), the Voronoi diagram defines a series of cells surrounding each point. Each cell contains all points that are closer to its defining point than to any other point in the set. Subsequently, the “borders” of the cells are equidistant between the defining points of adjacent cells.By doing so, the number of borders give you the number of closest neighbors. 
 For more information about the Voronoi diagram, see the [Wikipedia webpage](http://en.wikipedia.org/wiki/Voronoi_diagram).<br>
@@ -141,7 +141,7 @@ For a 2D system (or the quasi long-ranged bond orientational order of the hexati
 Hence, <i>ξ<sub>0</sub></i> is a measure for the typical size of the single crystalline domain, i.e., larger is <i>ξ<sub>0</sub></i> and larger is the crystalline domain (and better is the order). The bond-orientational correlation length <i>ξ<sub>0</sub></i> is determined by fitting <i>log(g<sub>6</sub>(r))</i> with a line Ar+B by using the fitting algorithm described in Numerical Recipes Section 15.2. The plugin shows the function <i>g<sub>6</sub>(r)</i> with the exponential fit in red and the length <i>ξ<sub>0</sub></i> (with the χ<sup>2</sup> test) in the same plot. <br>
 
 
-10. `Save Spacing and Order in a table` this checkbox indicates that you want to save the spacing and the order in a text file. If you select this option, a “Save Spacing & Order” window will appear at the end of the analysis.<br>
+10. `Save Spacing and Order in a table` this checkbox indicates that you want to save the spacing and the order in a text file. If you select this option, a “Save Spacing & Order” window will appear at the end of the analysis (Fig. 17).<br>
 
 
 ## 3. Analysis
@@ -152,7 +152,7 @@ First, the image is cropped (89% of the original height) to remove the informati
 <p align="center">
 	<img src="./images/Fig7.png" width="900">
 <br>
-<i>Fig. 7:</i> Original image with the rectangular selection used to crop at 89% the height of the image.</p><br>
+<i>Fig. 7:</i> Original image (Fig. 1) with the rectangular selection used to crop at 89% the height of the image.</p><br>
 
 
 Then the image is converted to a binary image to reveal the spots (by automatic or interactively thresholding depending of the checkbox `Automatic Threshold`) and a rolling ball of 10 pixels is applied to substract the background to the image (Fig 8).<br>
@@ -175,7 +175,6 @@ An overlay of the image with the substracted background (in grey) and the thresh
 <br>
 <i>Fig. 10:</i> Restart or not Window.</p><br>
 
-
 ### Dot dectection analysis 
 
 The function “ParticleAnalyzer” (“Analyze/Analyze Particles…”) is applied to detect the position of the different spots (the parameter “Min size” you have selected at the beginning is use here to remove all the spot below this size in pixel^2). This process permits to measure the centre of mass of each spot.
@@ -185,11 +184,11 @@ Each voronoi cell (that are not at the border of the image) are color-coded (usi
 <p align="center">
 	<img src="./images/Fig11.png" width="900">
 <br>
-<i>Fig. 11:</i> Voronoi diagram.</p><br>
+<i>Fig. 11:</i> Voronoi diagram of Fig. 1.</p><br>
 <p align="center">
 	<img src="./images/Fig12.png" width="900">
 <br>
-<i>Fig. 12:</i> Voronoi/Delaunay diagram.</p><br>
+<i>Fig. 12:</i> Voronoi/Delaunay diagram of Fig. 1.</p><br>
 
 A Neighbor Bar (Fig. 13) is also displayed in addition to the analysis output to indicate the number of neighbors of each voronoi ROI (=individual dot). 
 <p align="center">
@@ -197,31 +196,73 @@ A Neighbor Bar (Fig. 13) is also displayed in addition to the analysis output to
 <br>
 <i>Fig. 13:</i> Neighbor Bar.</p><br>
 
-## 4. Save Result: Spacing and Order
+For in-depth analysis, different plots can be displayed :
+ 
+* the `Besag’s L Function`: <br>
 
-You have to fill the different characteristics of your system in the “Save Spacing & Order” main window (Fig. 14) and all these parameters are saved in a new or existed file (see Fig 15).
+<p align="center">
+	<img src="./images/Fig14.png" width="300">
+<br>
+<i>Fig. 14:</i> The Besag’s L Function of Fig. 1</p><br>
+
+* the `Pair correlation function`: <br>
+
+<p align="center">
+	<img src="./images/Fig15.png" width="300">
+<br>
+<i>Fig. 15:</i> The Pair correlation function of Fig. 1</p><br>
+
+* the `Bond-orientational correlation function`: <br>
+
+<p align="center">
+	<img src="./images/Fig16.png" width="300">
+<br>
+<i>Fig. 16:</i> The Bond-orientational correlation function of Fig. 1.</p><br>
+
+### Save Result: Spacing and Order
+
+If you have ticked on the checkbox `Save Spacing and Order in a table` in the “Parameters” main window (Fig. 3), the “Save Spacing & Order” main window (Fig. 17) is appearing to let the user indicating the different characteristics listed below and all these parameters are saved in a new or existed file (see Fig 18).
 
 1. First row: Polymer
-	* First copolymer (in the list: PS, P2VP, PDMS, PMMA) with the number of monomer (Fig. 14a at left)
-	* Second copolymer (Fig. 14a at right)
+	* First copolymer (in the list: PS, P2VP, PDMS, PMMA) with the number of monomer (Fig. 17a at left)
+	* Second copolymer (Fig. 17a at right)
 2. Second row:
 	* Loading rate of gold (between 0 and 1), 
 	* Polymer concentration (in mg/ml) 
 3. Third row:
-	* Select if you have use the dipping method (False) or spinning method (True). If you select spinning method the “dipping speed” is disabled and in grey because you do not have to specify it (Fig. 14b).  
+	* Select if you have use the dipping method (False) or spinning method (True). If you select spinning method the “dipping speed” is disabled and in grey because you do not have to specify it (Fig. 17b).  
 	* Dipping speed (in Volts).
-
 4.	Fourth row:
 	* Date of the file when it was created (automatically filled with the information of the image), 
 	* Add in an existed file (Yes = True, No = False). The created file is automatically saved in the folder of the analysed image.
 	
 <p align="center">
-	<img src="./images/Fig14.png" width="800" 
+	<img src="./images/Fig17.png" width="800" 
          alt="“Save Spacing & Order” main window">
 <br>
-<i>Fig. 14:</i> The “Save Spacing & Order” main window.</p><br>
+<i>Fig. 17:</i> The “Save Spacing & Order” main window.</p><br>
 
 
+The File created contains the following parameters of the analysis:
+
+1. Filename (without extension), 
+2. Polymer, (example: PS[52400]-P2VP[28100])
+3. Loading, 
+4. Concentration (mg/ml),
+5. Speed (V),
+6. Date (yy/mm/dd), 
+7. Number of dots,
+8. Spacing in nm,
+10. Stdev (Standard deviation) in nm,
+11. Sterror (Standard error) in nm,
+12. Order Parameter
+
+To open the file you can use a spreadsheet software or Excel (with File ▷ Import) as indicated in Fig. 18:
+<p align="center">
+	<img src="./images/Fig18.png" width="900" 
+         alt="Import in Excel">
+<br>
+<i>Fig. 18:</i> Imported CSV file in Excel with the parameters of the analyzed image (from Fig. 17).</p><br>
 
 ## References
 
